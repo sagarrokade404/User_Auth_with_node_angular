@@ -27,8 +27,8 @@ this.handlelogin(res);
 
   }
 
-  handlelogin(token) {
-    this.dataServ.storelocaltoken(token.token);
+  handlelogin(restoken) {
+    this.dataServ.storelocaltoken(restoken.token);
     const user = this.dataServ.returnuserfromtoken();
     console.log(user);
   }

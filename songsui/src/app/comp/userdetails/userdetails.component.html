@@ -1,1 +1,10 @@
 <button mat-raised-button color="warn" (click)="logout()">logout</button>
+
+<mat-card style="background-color: cadetblue;">
+  <mat-card-title> UserDetails </mat-card-title>
+  <mat-card-header> <h3> {{user?.email}} </h3> </mat-card-header>
+  <mat-card-content>
+        <p> Name : - {{user?.firstName}} {{user?.lastName}}</p>
+
+  </mat-card-content>
+</mat-card>

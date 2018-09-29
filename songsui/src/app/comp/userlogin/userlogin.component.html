@@ -1,0 +1,20 @@
+
+<br>
+<form
+(ngSubmit)="loginSubmit()"  #loginform="ngForm"
+class="w100" fxLayout="column" fxLayoutAlign="space-around center" >
+<mat-form-field class="w80">
+  <input matInput type="email" name="email"
+  ngModel id="email" placeholder="Please enter Your email" >
+
+</mat-form-field>
+
+<mat-form-field class="w80">
+  <input matInput type="password" name="password"
+min="5" max="10"
+  ngModel id="password" placeholder="Please enter Your password" >
+
+</mat-form-field>
+
+<button type="submit" mat-raised-button color="primary" >Submit</button>
+</form>
